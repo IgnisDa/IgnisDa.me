@@ -22,6 +22,12 @@ module.exports = {
     'declaration-block-trailing-semicolon': null,
     'no-descending-specificity': null,
     'max-nesting-depth': 3,
+    'selector-no-qualifying-type': [
+      true,
+      {
+        ignore: ['class', 'attribute'],
+      },
+    ],
   },
   plugins: ['stylelint-scss'],
 }
