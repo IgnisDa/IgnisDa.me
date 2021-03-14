@@ -1,7 +1,7 @@
 ---
 title: 'Breadcrumbs'
 subtitle: 'Taking you where you need to be, and back'
-status: 'in progress'
+status: 'completed'
 ---
 
 ## A little back-story
