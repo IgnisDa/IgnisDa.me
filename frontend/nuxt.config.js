@@ -5,9 +5,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: "This is Diptesh Choudhuri's personal portfolio website",
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -48,6 +52,8 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  // Added later
   content: {
     markdown: {
       prism: {
@@ -73,7 +79,6 @@ export default {
       }
     },
   },
-  // Added later
   telemetry: false,
   watchers: {
     webpack: {
@@ -82,4 +87,14 @@ export default {
     },
   },
   target: 'static',
+  pwa: {
+    icon: {
+      fileName: 'app-icon.png',
+    },
+    meta: { theme_color: '#fcba03' },
+    manifest: {
+      short_name: 'IgnisDa',
+      name: 'Diptesh Choudhuri portfolio website',
+    },
+  },
 }
